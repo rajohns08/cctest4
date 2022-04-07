@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "cczp.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    struct cczp mystruct;
+    int test = cczp_init(&mystruct);
 }
 
 

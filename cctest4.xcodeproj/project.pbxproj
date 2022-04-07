@@ -14,6 +14,7 @@
 		DCF2D8EF27FE6781001104C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF2D8EE27FE6781001104C9 /* Assets.xcassets */; };
 		DCF2D8F227FE6781001104C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF2D8F027FE6781001104C9 /* LaunchScreen.storyboard */; };
 		DCF2D8F527FE6781001104C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF2D8F427FE6781001104C9 /* main.m */; };
+		DCF2D8FD27FE67E3001104C9 /* libcorecrypto_static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF2D8FC27FE67E3001104C9 /* libcorecrypto_static.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,83 @@
 		DCF2D8F127FE6781001104C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCF2D8F327FE6781001104C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF2D8F427FE6781001104C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCF2D8FC27FE67E3001104C9 /* libcorecrypto_static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcorecrypto_static.a; path = lib/libcorecrypto_static.a; sourceTree = "<group>"; };
+		DCF2D90027FE6819001104C9 /* cczp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cczp.h; sourceTree = "<group>"; };
+		DCF2D90127FE6819001104C9 /* ccmd4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmd4.h; sourceTree = "<group>"; };
+		DCF2D90227FE6819001104C9 /* ccrng_sequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_sequence.h; sourceTree = "<group>"; };
+		DCF2D90327FE6819001104C9 /* ccz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccz.h; sourceTree = "<group>"; };
+		DCF2D90427FE6819001104C9 /* ccaes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccaes.h; sourceTree = "<group>"; };
+		DCF2D90527FE6819001104C9 /* cchkdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cchkdf.h; sourceTree = "<group>"; };
+		DCF2D90627FE6819001104C9 /* ccec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccec.h; sourceTree = "<group>"; };
+		DCF2D90727FE6819001104C9 /* cc_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc_config.h; sourceTree = "<group>"; };
+		DCF2D90827FE6819001104C9 /* ccvrf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccvrf.h; sourceTree = "<group>"; };
+		DCF2D90927FE6819001104C9 /* ccsrp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccsrp.h; sourceTree = "<group>"; };
+		DCF2D90A27FE6819001104C9 /* ccrng_ecfips_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_ecfips_test.h; sourceTree = "<group>"; };
+		DCF2D90B27FE6819001104C9 /* ccrng_drbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_drbg.h; sourceTree = "<group>"; };
+		DCF2D90C27FE6819001104C9 /* cc_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc_priv.h; sourceTree = "<group>"; };
+		DCF2D90D27FE6819001104C9 /* fipspost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fipspost.h; sourceTree = "<group>"; };
+		DCF2D90E27FE6819001104C9 /* ccec25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccec25519.h; sourceTree = "<group>"; };
+		DCF2D90F27FE6819001104C9 /* ccder_rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccder_rsa.h; sourceTree = "<group>"; };
+		DCF2D91027FE6819001104C9 /* ccrc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrc4.h; sourceTree = "<group>"; };
+		DCF2D91127FE6819001104C9 /* ccdes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdes.h; sourceTree = "<group>"; };
+		DCF2D91227FE6819001104C9 /* ccrsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrsa.h; sourceTree = "<group>"; };
+		DCF2D91327FE6819001104C9 /* ccblowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccblowfish.h; sourceTree = "<group>"; };
+		DCF2D91427FE6819001104C9 /* ccchacha20poly1305_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccchacha20poly1305_priv.h; sourceTree = "<group>"; };
+		DCF2D91527FE6819001104C9 /* ccmode_siv_hmac_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode_siv_hmac_priv.h; sourceTree = "<group>"; };
+		DCF2D91627FE6819001104C9 /* ccdrbg_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdrbg_impl.h; sourceTree = "<group>"; };
+		DCF2D91727FE6819001104C9 /* cc_error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc_error.h; sourceTree = "<group>"; };
+		DCF2D91827FE6819001104C9 /* cch2c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cch2c.h; sourceTree = "<group>"; };
+		DCF2D91927FE6819001104C9 /* ccrng_pbkdf2_prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_pbkdf2_prng.h; sourceTree = "<group>"; };
+		DCF2D91A27FE6819001104C9 /* ccdigest_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdigest_priv.h; sourceTree = "<group>"; };
+		DCF2D91B27FE6819001104C9 /* ccnistkdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccnistkdf.h; sourceTree = "<group>"; };
+		DCF2D91C27FE6819001104C9 /* ccasn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccasn1.h; sourceTree = "<group>"; };
+		DCF2D91D27FE6819001104C9 /* ccripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccripemd.h; sourceTree = "<group>"; };
+		DCF2D91E27FE6819001104C9 /* ccchacha20poly1305.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccchacha20poly1305.h; sourceTree = "<group>"; };
+		DCF2D91F27FE6819001104C9 /* cc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc.h; sourceTree = "<group>"; };
+		DCF2D92027FE6819001104C9 /* ccder_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccder_priv.h; sourceTree = "<group>"; };
+		DCF2D92127FE6819001104C9 /* ccder_decode_eckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccder_decode_eckey.h; sourceTree = "<group>"; };
+		DCF2D92227FE6819001104C9 /* ccrsa_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrsa_priv.h; sourceTree = "<group>"; };
+		DCF2D92327FE6819001104C9 /* ccdh_gp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdh_gp.h; sourceTree = "<group>"; };
+		DCF2D92427FE6819001104C9 /* ccrng_rsafips_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_rsafips_test.h; sourceTree = "<group>"; };
+		DCF2D92527FE6819001104C9 /* ccder_encode_eckey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccder_encode_eckey.h; sourceTree = "<group>"; };
+		DCF2D92627FE6819001104C9 /* ccz_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccz_priv.h; sourceTree = "<group>"; };
+		DCF2D92727FE6819001104C9 /* ccdrbg_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdrbg_factory.h; sourceTree = "<group>"; };
+		DCF2D92827FE6819001104C9 /* ccansikdf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccansikdf.h; sourceTree = "<group>"; };
+		DCF2D92927FE6819001104C9 /* ccmd2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmd2.h; sourceTree = "<group>"; };
+		DCF2D92A27FE6819001104C9 /* ccsha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccsha1.h; sourceTree = "<group>"; };
+		DCF2D92B27FE6819001104C9 /* ccecies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccecies.h; sourceTree = "<group>"; };
+		DCF2D92C27FE6819001104C9 /* ccwrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccwrap.h; sourceTree = "<group>"; };
+		DCF2D92D27FE6819001104C9 /* ccmode_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode_factory.h; sourceTree = "<group>"; };
+		DCF2D92E27FE6819001104C9 /* ccrc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrc2.h; sourceTree = "<group>"; };
+		DCF2D92F27FE6819001104C9 /* ccsrp_gp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccsrp_gp.h; sourceTree = "<group>"; };
+		DCF2D93027FE6819001104C9 /* cccmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cccmac.h; sourceTree = "<group>"; };
+		DCF2D93127FE6819001104C9 /* ccscrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccscrypt.h; sourceTree = "<group>"; };
+		DCF2D93227FE6819001104C9 /* ccn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccn.h; sourceTree = "<group>"; };
+		DCF2D93327FE6819001104C9 /* ccmd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmd5.h; sourceTree = "<group>"; };
+		DCF2D93427FE6819001104C9 /* ccrng_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_system.h; sourceTree = "<group>"; };
+		DCF2D93527FE6819001104C9 /* ccmode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode.h; sourceTree = "<group>"; };
+		DCF2D93627FE6819001104C9 /* ccec_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccec_priv.h; sourceTree = "<group>"; };
+		DCF2D93727FE6819001104C9 /* ccspake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccspake.h; sourceTree = "<group>"; };
+		DCF2D93827FE6819001104C9 /* ccrng_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng_test.h; sourceTree = "<group>"; };
+		DCF2D93927FE6819001104C9 /* cchmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cchmac.h; sourceTree = "<group>"; };
+		DCF2D93A27FE6819001104C9 /* ccpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccpad.h; sourceTree = "<group>"; };
+		DCF2D93B27FE6819001104C9 /* ccwrap_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccwrap_priv.h; sourceTree = "<group>"; };
+		DCF2D93C27FE6819001104C9 /* ccecies_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccecies_priv.h; sourceTree = "<group>"; };
+		DCF2D93D27FE6819001104C9 /* ccsha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccsha2.h; sourceTree = "<group>"; };
+		DCF2D93E27FE6819001104C9 /* ccpbkdf2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccpbkdf2.h; sourceTree = "<group>"; };
+		DCF2D93F27FE6819001104C9 /* ccec25519_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccec25519_priv.h; sourceTree = "<group>"; };
+		DCF2D94027FE6819001104C9 /* ccdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdh.h; sourceTree = "<group>"; };
+		DCF2D94127FE6819001104C9 /* ccmode_impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode_impl.h; sourceTree = "<group>"; };
+		DCF2D94227FE6819001104C9 /* ccmode_siv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode_siv.h; sourceTree = "<group>"; };
+		DCF2D94327FE6819001104C9 /* ccdrbg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdrbg.h; sourceTree = "<group>"; };
+		DCF2D94427FE6819001104C9 /* ccmode_siv_hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode_siv_hmac.h; sourceTree = "<group>"; };
+		DCF2D94527FE6819001104C9 /* ccmode_siv_priv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccmode_siv_priv.h; sourceTree = "<group>"; };
+		DCF2D94627FE6819001104C9 /* cc_fault_canary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cc_fault_canary.h; sourceTree = "<group>"; };
+		DCF2D94727FE6819001104C9 /* cccast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cccast.h; sourceTree = "<group>"; };
+		DCF2D94827FE6819001104C9 /* ccdigest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccdigest.h; sourceTree = "<group>"; };
+		DCF2D94927FE6819001104C9 /* ccder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccder.h; sourceTree = "<group>"; };
+		DCF2D94A27FE6819001104C9 /* ccckg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccckg.h; sourceTree = "<group>"; };
+		DCF2D94B27FE6819001104C9 /* ccrng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccrng.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF2D8FD27FE67E3001104C9 /* libcorecrypto_static.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +126,7 @@
 			children = (
 				DCF2D8E127FE6780001104C9 /* cctest4 */,
 				DCF2D8E027FE6780001104C9 /* Products */,
+				DCF2D8FB27FE67E3001104C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +141,7 @@
 		DCF2D8E127FE6780001104C9 /* cctest4 */ = {
 			isa = PBXGroup;
 			children = (
+				DCF2D8FE27FE6819001104C9 /* include */,
 				DCF2D8E227FE6780001104C9 /* AppDelegate.h */,
 				DCF2D8E327FE6780001104C9 /* AppDelegate.m */,
 				DCF2D8E527FE6780001104C9 /* SceneDelegate.h */,
@@ -74,6 +155,105 @@
 				DCF2D8F427FE6781001104C9 /* main.m */,
 			);
 			path = cctest4;
+			sourceTree = "<group>";
+		};
+		DCF2D8FB27FE67E3001104C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCF2D8FC27FE67E3001104C9 /* libcorecrypto_static.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCF2D8FE27FE6819001104C9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DCF2D8FF27FE6819001104C9 /* corecrypto */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DCF2D8FF27FE6819001104C9 /* corecrypto */ = {
+			isa = PBXGroup;
+			children = (
+				DCF2D90027FE6819001104C9 /* cczp.h */,
+				DCF2D90127FE6819001104C9 /* ccmd4.h */,
+				DCF2D90227FE6819001104C9 /* ccrng_sequence.h */,
+				DCF2D90327FE6819001104C9 /* ccz.h */,
+				DCF2D90427FE6819001104C9 /* ccaes.h */,
+				DCF2D90527FE6819001104C9 /* cchkdf.h */,
+				DCF2D90627FE6819001104C9 /* ccec.h */,
+				DCF2D90727FE6819001104C9 /* cc_config.h */,
+				DCF2D90827FE6819001104C9 /* ccvrf.h */,
+				DCF2D90927FE6819001104C9 /* ccsrp.h */,
+				DCF2D90A27FE6819001104C9 /* ccrng_ecfips_test.h */,
+				DCF2D90B27FE6819001104C9 /* ccrng_drbg.h */,
+				DCF2D90C27FE6819001104C9 /* cc_priv.h */,
+				DCF2D90D27FE6819001104C9 /* fipspost.h */,
+				DCF2D90E27FE6819001104C9 /* ccec25519.h */,
+				DCF2D90F27FE6819001104C9 /* ccder_rsa.h */,
+				DCF2D91027FE6819001104C9 /* ccrc4.h */,
+				DCF2D91127FE6819001104C9 /* ccdes.h */,
+				DCF2D91227FE6819001104C9 /* ccrsa.h */,
+				DCF2D91327FE6819001104C9 /* ccblowfish.h */,
+				DCF2D91427FE6819001104C9 /* ccchacha20poly1305_priv.h */,
+				DCF2D91527FE6819001104C9 /* ccmode_siv_hmac_priv.h */,
+				DCF2D91627FE6819001104C9 /* ccdrbg_impl.h */,
+				DCF2D91727FE6819001104C9 /* cc_error.h */,
+				DCF2D91827FE6819001104C9 /* cch2c.h */,
+				DCF2D91927FE6819001104C9 /* ccrng_pbkdf2_prng.h */,
+				DCF2D91A27FE6819001104C9 /* ccdigest_priv.h */,
+				DCF2D91B27FE6819001104C9 /* ccnistkdf.h */,
+				DCF2D91C27FE6819001104C9 /* ccasn1.h */,
+				DCF2D91D27FE6819001104C9 /* ccripemd.h */,
+				DCF2D91E27FE6819001104C9 /* ccchacha20poly1305.h */,
+				DCF2D91F27FE6819001104C9 /* cc.h */,
+				DCF2D92027FE6819001104C9 /* ccder_priv.h */,
+				DCF2D92127FE6819001104C9 /* ccder_decode_eckey.h */,
+				DCF2D92227FE6819001104C9 /* ccrsa_priv.h */,
+				DCF2D92327FE6819001104C9 /* ccdh_gp.h */,
+				DCF2D92427FE6819001104C9 /* ccrng_rsafips_test.h */,
+				DCF2D92527FE6819001104C9 /* ccder_encode_eckey.h */,
+				DCF2D92627FE6819001104C9 /* ccz_priv.h */,
+				DCF2D92727FE6819001104C9 /* ccdrbg_factory.h */,
+				DCF2D92827FE6819001104C9 /* ccansikdf.h */,
+				DCF2D92927FE6819001104C9 /* ccmd2.h */,
+				DCF2D92A27FE6819001104C9 /* ccsha1.h */,
+				DCF2D92B27FE6819001104C9 /* ccecies.h */,
+				DCF2D92C27FE6819001104C9 /* ccwrap.h */,
+				DCF2D92D27FE6819001104C9 /* ccmode_factory.h */,
+				DCF2D92E27FE6819001104C9 /* ccrc2.h */,
+				DCF2D92F27FE6819001104C9 /* ccsrp_gp.h */,
+				DCF2D93027FE6819001104C9 /* cccmac.h */,
+				DCF2D93127FE6819001104C9 /* ccscrypt.h */,
+				DCF2D93227FE6819001104C9 /* ccn.h */,
+				DCF2D93327FE6819001104C9 /* ccmd5.h */,
+				DCF2D93427FE6819001104C9 /* ccrng_system.h */,
+				DCF2D93527FE6819001104C9 /* ccmode.h */,
+				DCF2D93627FE6819001104C9 /* ccec_priv.h */,
+				DCF2D93727FE6819001104C9 /* ccspake.h */,
+				DCF2D93827FE6819001104C9 /* ccrng_test.h */,
+				DCF2D93927FE6819001104C9 /* cchmac.h */,
+				DCF2D93A27FE6819001104C9 /* ccpad.h */,
+				DCF2D93B27FE6819001104C9 /* ccwrap_priv.h */,
+				DCF2D93C27FE6819001104C9 /* ccecies_priv.h */,
+				DCF2D93D27FE6819001104C9 /* ccsha2.h */,
+				DCF2D93E27FE6819001104C9 /* ccpbkdf2.h */,
+				DCF2D93F27FE6819001104C9 /* ccec25519_priv.h */,
+				DCF2D94027FE6819001104C9 /* ccdh.h */,
+				DCF2D94127FE6819001104C9 /* ccmode_impl.h */,
+				DCF2D94227FE6819001104C9 /* ccmode_siv.h */,
+				DCF2D94327FE6819001104C9 /* ccdrbg.h */,
+				DCF2D94427FE6819001104C9 /* ccmode_siv_hmac.h */,
+				DCF2D94527FE6819001104C9 /* ccmode_siv_priv.h */,
+				DCF2D94627FE6819001104C9 /* cc_fault_canary.h */,
+				DCF2D94727FE6819001104C9 /* cccast.h */,
+				DCF2D94827FE6819001104C9 /* ccdigest.h */,
+				DCF2D94927FE6819001104C9 /* ccder.h */,
+				DCF2D94A27FE6819001104C9 /* ccckg.h */,
+				DCF2D94B27FE6819001104C9 /* ccrng.h */,
+			);
+			path = corecrypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/cctest4/include\"";
 				INFOPLIST_FILE = cctest4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -304,6 +485,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajohns.cctest4;
@@ -321,6 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/cctest4/include\"";
 				INFOPLIST_FILE = cctest4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -330,6 +516,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rajohns.cctest4;
