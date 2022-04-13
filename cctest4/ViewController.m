@@ -38,7 +38,7 @@
     struct ccmode_cbc test;
     test.size = 4;
     test.block_size = CCAES_BLOCK_SIZE;
-    test.init(&test, key, CCAES_KEY_SIZE_256);
+    test.init(&test, ctx, CCAES_KEY_SIZE_256, dk);
 }
 
 
