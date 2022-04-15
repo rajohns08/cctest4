@@ -34,7 +34,7 @@
     NSLog(@"test");
     
     // aes encryption
-    uint8_t data[] = {0x01};
+    uint8_t data[] = {0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01};
     size_t dataLen = sizeof(data)/sizeof(data[0]);
     int rcode;
     const struct ccmode_cbc *mode = ccaes_cbc_encrypt_mode();
@@ -45,6 +45,7 @@
     cc_clear(mode->block_size, iv_ctx);
     rcode = mode->init(mode, ctx, CCAES_KEY_SIZE_256, dk);
     mode->cbc(ctx, iv_ctx, dataLen, &data, encryptedData);
+    uint8_t ed0 = encryptedData[0];
     cccbc_ctx_clear(mode->size, ctx);
     NSLog(@"rcode: %d", rcode);
 }
