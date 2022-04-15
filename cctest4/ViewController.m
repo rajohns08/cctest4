@@ -34,11 +34,11 @@
     NSLog(@"test");
     
     // aes encryption
-    cccbc_ctx *ctx;
-    struct ccmode_cbc test;
-    test.size = 4;
-    test.block_size = CCAES_BLOCK_SIZE;
-    test.init(&test, ctx, CCAES_KEY_SIZE_256, dk);
+    int rcode;
+    const struct ccmode_cbc *mode = ccaes_cbc_encrypt_mode();
+    cccbc_ctx_decl(mode->size, ctx);
+    rcode = mode->init(mode, ctx, CCAES_KEY_SIZE_256, dk);
+    NSLog(@"rcode: %d", rcode);
 }
 
 
