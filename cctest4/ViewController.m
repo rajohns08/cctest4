@@ -36,7 +36,7 @@
     NSLog(@"dk0: %d", dk0);
     
     // aes encryption
-    uint8_t data[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f, 0x00};
+    uint8_t data[] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f, 0x01};
     size_t dataLen = sizeof(data)/sizeof(data[0]);
     size_t nblocks = ceil((double)dataLen/CCAES_BLOCK_SIZE);
     int rcode;
@@ -94,7 +94,8 @@
     uint8_t dd13 = decrypted_data[13];
     uint8_t dd14 = decrypted_data[14];
     uint8_t dd15 = decrypted_data[15];
-    NSLog(@"dd0: %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", dd0, dd1, dd2, dd3, dd4, dd5, dd6, dd7, dd8, dd9, dd10, dd11, dd12, dd13, dd14, dd15);
+    uint8_t dd16 = decrypted_data[16];
+    NSLog(@"dd0: %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", dd0, dd1, dd2, dd3, dd4, dd5, dd6, dd7, dd8, dd9, dd10, dd11, dd12, dd13, dd14, dd15, dd16);
     
 }
 
