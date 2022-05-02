@@ -9,6 +9,7 @@
 #import "ccpbkdf2.h"
 #import "ccsha2.h"
 #import "ccaes.h"
+#import "ccpad.h"
 
 @interface ViewController ()
 
@@ -36,7 +37,7 @@
     NSLog(@"dk0: %d", dk0);
     
     // aes encryption
-    uint8_t data[] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f, 0x01};
+    uint8_t data[] = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0a, 0x0b, 0x0c, 0x0d, 0x0e, 0x0f};
     size_t dataLen = sizeof(data)/sizeof(data[0]);
     size_t nblocks = ceil((double)dataLen/CCAES_BLOCK_SIZE);
     int rcode;
@@ -47,7 +48,8 @@
     cccbc_iv_decl(mode->block_size, iv_ctx);
     cc_clear(mode->block_size, iv_ctx);
     rcode = mode->init(mode, ctx, CCAES_KEY_SIZE_256, dk);
-    mode->cbc(ctx, iv_ctx, nblocks, data, encryptedData);
+    size_t esize = ccpad_pkcs7_encrypt(mode, ctx, iv_ctx, 15, data, encryptedData);
+//    int cbcrcode = mode->cbc(ctx, iv_ctx, nblocks, data, encryptedData);
     uint8_t ed0 = encryptedData[0];
     uint8_t ed1 = encryptedData[1];
     uint8_t ed2 = encryptedData[2];
@@ -63,10 +65,12 @@
     uint8_t ed12 = encryptedData[12];
     uint8_t ed13 = encryptedData[13];
     uint8_t ed14 = encryptedData[14];
-    uint8_t ed15 = encryptedData[15];
-    uint8_t ed16 = encryptedData[16];
-    NSLog(@"ed0: %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", ed0, ed1, ed2, ed3, ed4, ed5, ed6, ed7, ed8, ed9, ed10, ed11, ed12, ed13, ed14, ed15, ed16);
+    NSLog(@"ed0: %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", ed0, ed1, ed2, ed3, ed4, ed5, ed6, ed7, ed8, ed9, ed10, ed11, ed12, ed13, ed14);
     cccbc_ctx_clear(mode->size, ctx);
+    
+    NSLog(@"esize: %zu", esize);
+//    size_t elen = sizeof(encryptedData)/sizeof(encryptedData[0]);
+//    NSLog(@"cbcrcode: %d", cbcrcode);
     
     
     // aes decryption
@@ -77,7 +81,7 @@
     cc_clear(decrypt_mode->block_size, div_ctx);
     int dcode;
     dcode = decrypt_mode->init(decrypt_mode, dctx, CCAES_KEY_SIZE_256, dk);
-    decrypt_mode->cbc(dctx, div_ctx, nblocks, encryptedData, decrypted_data);
+    size_t dsize = ccpad_pkcs7_decrypt(decrypt_mode, dctx, div_ctx, 16, encryptedData, decrypted_data);
     uint8_t dd0 = decrypted_data[0];
     uint8_t dd1 = decrypted_data[1];
     uint8_t dd2 = decrypted_data[2];
@@ -93,9 +97,10 @@
     uint8_t dd12 = decrypted_data[12];
     uint8_t dd13 = decrypted_data[13];
     uint8_t dd14 = decrypted_data[14];
-    uint8_t dd15 = decrypted_data[15];
-    uint8_t dd16 = decrypted_data[16];
-    NSLog(@"dd0: %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", dd0, dd1, dd2, dd3, dd4, dd5, dd6, dd7, dd8, dd9, dd10, dd11, dd12, dd13, dd14, dd15, dd16);
+    NSLog(@"dd0: %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d, %d", dd0, dd1, dd2, dd3, dd4, dd5, dd6, dd7, dd8, dd9, dd10, dd11, dd12, dd13, dd14);
+    NSLog(@"dsize: %zu", dsize);
+//    size_t dlen = sizeof(decrypted_data)/sizeof(decrypted_data[0]);
+//    NSLog(@"size: %d", dlen);
     
 }
 
